@@ -5,6 +5,9 @@ def desc():
     with open("README.md") as f:
         return f.read()
 
+def reqs():
+    with open('requirements.txt') as f:
+        return f.read().splitlines()
 
 setup(
     name='frasco-sentry',
@@ -17,8 +20,5 @@ setup(
     long_description=desc(),
     py_modules=['frasco_sentry'],
     platforms='any',
-    install_requires=[
-        'frasco',
-        'raven==5.0.0'
-    ]
+    install_requires=reqs() + ['frasco']
 )
