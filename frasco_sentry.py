@@ -1,4 +1,4 @@
-from frasco import Feature, actions
+from frasco import Feature, action
 from raven.contrib.flask import Sentry
 
 

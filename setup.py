@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='frasco-sentry',
-    version='0.1',
+    version='0.1.1',
     url='http://github.com/frascoweb/frasco-sentry',
     license='MIT',
     author='Maxime Bouroumeau-Fuseau',
